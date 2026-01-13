@@ -1,13 +1,7 @@
 {
   "name": "hayya",
   "version": "1.0.0",
-  "description": "",
-  "main": "generate.js",
-  "type": "module",
   "scripts": {
-    "generate": "node generate.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "push": "git add -A && git commit -m 'auto update' || true && git push"
+  }
 }
