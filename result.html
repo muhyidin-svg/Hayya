@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Belajar</title>
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+
+  <main class="result-container">
+
+    <h1 class="result-title">Hasil Belajar</h1>
+
+    <!-- SCORE CARD -->
+    <section class="score-card">
+      <div class="score-value">
+        <span id="skor">0%</span>
+      </div>
+      <div class="score-detail">
+        <span id="total-benar">0</span> /
+        <span id="total-soal">0</span> soal benar
+      </div>
+    </section>
+
+    <!-- BINTANG -->
+    <section class="stars" id="stars"></section>
+
+    <!-- BADGE -->
+    <section class="badge" id="badge"></section>
+
+    <!-- PESAN MOTIVASI -->
+    <p class="message" id="message"></p>
+    <div class="actions">
+  <button id="btn-ulangi">Ulangi Quiz</button>
+  <button id="btn-kembali">Kembali ke Pertemuan</button>
+</div>
+
+
+  </main>
+
+  <script src="js/pages/result.js"></script>
+
+</script>
+<!-- GLOBAL BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="tema.html" class="nav-item" id="nav-tema">
+    <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21H3z"/></svg>
+    <span>Tema</span>
+  </a>
+
+  <a href="#" class="nav-item" id="nav-subtema">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <span>Subtema</span>
+  </a>
+
+  <a href="#" class="nav-item" id="nav-pertemuan">
+    <svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 0 1 1-1h11v16H4z"/></svg>
+    <span>Pertemuan</span>
+  </a>
+
+  <a href="profil.html" class="nav-item" id="nav-profil">
+    <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm7 9c0-4-3-6-7-6s-7 2-7 6"/></svg>
+    <span>Profil</span>
+  </a>
+</nav>
+
+<!-- GLOBAL NAV SCRIPT -->
+<script src="js/global-nav.js"></script>
+</body>
+</html>

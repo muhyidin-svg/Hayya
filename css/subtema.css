@@ -1,0 +1,124 @@
+/* ======================================
+   WRAPPER
+====================================== */
+.subtema-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px 25px 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ======================================
+   HEADER
+====================================== */
+.st-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #1ec756;
+  border-radius: 12px;
+}
+
+.user-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #444;
+}
+
+/* ======================================
+   TITLE
+====================================== */
+.st-title {
+  background: #1ec756;
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 0 #0e8a36;
+  margin-bottom: 18px;
+}
+
+.st-top {
+  font-size: 0.9rem;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+.st-title h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+/* ======================================
+   LIST SUBTEMA
+====================================== */
+.subtema-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.subtema-list::-webkit-scrollbar {
+  width: 0;
+}
+
+/* CARD SUBTEMA */
+.subtema-card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+
+  box-shadow: 0 4px 0 #dcdcdc;
+  border: 2px solid #e8e8e8;
+
+  cursor: pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.subtema-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 0 #c9c9c9;
+}
+
+/* NAMA */
+.subtema-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* STATUS */
+.subtema-status {
+  display: inline-block;
+  background: #1ec756;
+  color: white;
+  font-size: 0.78rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.subtema-card.selesai {
+  opacity: 0.7;
+}
+
+.subtema-card.selesai .subtema-status {
+  background: #999;
+}

@@ -1,0 +1,135 @@
+/* WRAPPER */
+.home-wrapper {
+  min-height: 100vh;
+  background: #18c34b;
+  position: relative;
+}
+
+/* AREA ATAS */
+.hero-top {
+  height: 160px;
+}
+
+/* ===============================
+   AREA CENTER (INI KUNCI UTAMA)
+   =============================== */
+.center-area {
+  min-height: calc(100vh - 160px); /* tinggi layar dikurangi hero */
+  display: flex;
+  align-items: center;     /* CENTER VERTIKAL */
+  justify-content: center; /* CENTER HORIZONTAL */
+  padding: 20px;
+}
+
+/* ===============================
+   HOME CARD
+   =============================== */
+.home-card {
+  background: #ffffff;
+  width: 90%;
+  max-width: 380px;
+  margin: 0 auto;
+
+  border-radius: 28px;
+  padding: 32px 24px;
+
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   HERO IMAGE (DALAM CARD)
+   =============================== */
+.hero-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+
+  display: block;
+  margin: 0 auto 20px;
+
+  object-fit: contain; /* gambar UTUH */
+}
+
+
+/* FOOTER */
+.home-footer {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #eafff1;
+}
+
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===============================
+   JUDUL
+   =============================== */
+.title {
+  color: #18c34b;
+  font-weight: 800;
+  font-size: 1.9rem;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+/* ===============================
+   INPUT
+   =============================== */
+.input-nama {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   TOMBOL
+   =============================== */
+.btn-mulai {
+  width: 100%;
+  background: #f5d316;
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #d1b40f;
+}
+
+.btn-mulai:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #d1b40f;
+}
+
+/* ===============================
+   FOOTER (TIDAK MENDORONG CARD)
+   =============================== */
+.home-footer {
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #eafff1;
+}
+
+/* ===============================
+   TABLET
+   =============================== */
+@media (min-width: 600px) {
+  .home-card {
+    max-width: 420px;
+  }
+}

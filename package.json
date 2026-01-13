@@ -1,0 +1,13 @@
+{
+  "name": "hayya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

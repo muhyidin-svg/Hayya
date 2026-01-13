@@ -1,0 +1,76 @@
+/* Wrapper full height */
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* hero tetap di atas */
+  align-items: center;
+  background: #f2f2f2;
+  position: relative;
+}
+
+/* Hero hijau */
+.hero-top {
+  background: #1ec756;
+  width: 100%;
+  height: 180px;
+}
+
+/* Card utama */
+.home-card {
+  background: white;
+  width: 90%;
+  max-width: 380px;
+  margin-top: -80px;      /* naik sedikit ke area hijau */
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 0 #d0d0d0;
+  text-align: center;
+}
+
+/* Hero image */
+.hero-image {
+  width: 60%;
+  max-width: 220px;
+  margin-top: -40px;
+}
+
+/* Judul */
+.title {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #333;
+}
+
+/* Input */
+.input-nama {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Tombol */
+.btn-mulai {
+  width: 100%;
+  padding: 14px;
+  background: #1ec756;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 0 #0f8c3f;
+}
+
+/* Footer */
+.home-footer {
+  margin-top: auto;
+  padding: 15px;
+  color: #777;
+  font-size: 0.9rem;
+}

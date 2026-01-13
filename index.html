@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hayya Nata’allam</title>
+
+  <!-- CSS GLOBAL -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- CSS KHUSUS HOME -->
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<main class="home-wrapper">
+
+  <!-- AREA HIJAU ATAS -->
+  <section class="hero-top"></section>
+
+  <!-- KARTU UTAMA -->
+  <section class="home-card">
+
+    <!-- HERO IMAGE -->
+    <img
+      src="assets/images/ui/Hero.png"
+      alt="Hero"
+      class="hero-image"
+    >
+
+    <!-- JUDUL -->
+    <h1 class="title">HAYYA<br>NATA’ALLAM</h1>
+
+    <!-- INPUT -->
+    <input
+      type="text"
+      id="nama-siswa"
+      class="input-nama"
+      placeholder="Ketik namamu disini"
+    >
+
+    <!-- BUTTON -->
+    <button id="btn-mulai" class="btn-mulai">
+      MULAI KUIS
+    </button>
+
+  </section>
+
+  <footer class="home-footer">
+    Developed by Mas Yahya
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("btn-mulai").onclick = () => {
+    const nama = document.getElementById("nama-siswa").value.trim();
+
+    if (!nama) {
+      alert("Silakan masukkan nama terlebih dahulu");
+      return;
+    }
+
+    localStorage.setItem("namaSiswa", nama);
+    window.location.href = "tema.html";
+  };
+</script>
+
+</body>
+</html>

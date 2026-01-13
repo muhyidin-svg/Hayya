@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.result-container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.result-title {
+  margin-bottom: 24px;
+  font-size: 22px;
+}
+
+.score-card {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.score-value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.score-detail {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* BINTANG */
+.stars {
+  font-size: 28px;
+  margin: 16px 0;
+}
+
+.star {
+  color: #ffd700;
+  margin: 0 2px;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.badge.good {
+  background: #e6f7e6;
+  color: #2e7d32;
+}
+
+.badge.medium {
+  background: #fff4e5;
+  color: #ef6c00;
+}
+
+.badge.low {
+  background: #fdecea;
+  color: #c62828;
+}
+
+/* PESAN */
+.message {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btn-ulangi {
+  background: #4facfe;
+  color: #fff;
+}
+
+#btn-kembali {
+  background: #e0e0e0;
+  color: #333;
+}

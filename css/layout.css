@@ -1,0 +1,94 @@
+/* ==================================================
+   layout.css (FINAL)
+   --------------------------------------------------
+   Layout global lintas halaman — aman untuk mobile
+   ================================================== */
+
+/* RESET GLOBAL */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Container tengah (opsional untuk halaman tertentu) */
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Judul halaman (standar) */
+.page-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.page-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Tombol utama */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.btn-primary:hover {
+  background: #3b8de0;
+}
+
+/* ==================================================
+   GLOBAL BOTTOM NAV
+================================================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 480px;
+
+  background: #fff;
+  border-top: 1px solid #ddd;
+
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+
+  z-index: 9990;
+}
+
+.bottom-nav .nav-item {
+  flex: 1;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.bottom-nav .nav-item svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  display: block;
+  margin: 0 auto 2px;
+}
+
+.bottom-nav .nav-item.active {
+  color: #1ec756;
+  font-weight: 800;
+}

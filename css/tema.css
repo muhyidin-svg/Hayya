@@ -1,0 +1,132 @@
+/* ===============================
+   WRAPPER (fix untuk bottom nav)
+=============================== */
+.tema-wrapper {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px 80px; /* ruang untuk nav bawah */
+  display: flex;
+  flex-direction: column;
+
+  height: auto;        /* perbaikan 1 */
+  min-height: 100vh;   /* perbaikan 2 */
+  overflow: visible;   /* perbaikan 3 */
+}
+
+
+
+/* =======================
+   HEADER (avatar + nama)
+======================= */
+.tema-header {
+  display: flex;
+  align-items: center;
+  margin: 18px 0 12px 0;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  background: #1ec756;
+  border-radius: 12px;
+}
+
+.user-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333;
+}
+
+
+/* =======================
+   JUDUL
+======================= */
+.tema-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+/* =======================
+   LIST TEMA (scrollable)
+======================= */
+.tema-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.tema-list::-webkit-scrollbar {
+  width: 0;
+}
+
+
+/* =======================
+   CARD TEMA
+======================= */
+.tema-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px 18px 20px;
+  margin-bottom: 18px;
+
+  border: 2px solid #ececec;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+
+.tema-card:hover {
+  transform: scale(1.02);
+}
+
+
+/* Judul + Deskripsi */
+.tema-header-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tema-name {
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.tema-desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+
+/* =======================
+   INFO BOX
+======================= */
+.tema-info {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+/* WARNA PER KELAS */
+.tema-info.kelas7 { background: #1ec756; }
+.tema-info.kelas8 { background: #1e8cc7; }
+.tema-info.kelas9 { background: #c71e52; }
