@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Hasil Belajar</title>
   <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 
@@ -40,7 +41,6 @@
 
   <script src="js/pages/result.js"></script>
 
-</script>
 <!-- GLOBAL BOTTOM NAV -->
 <nav class="bottom-nav">
   <a href="tema.html" class="nav-item" id="nav-tema">
@@ -66,5 +66,60 @@
 
 <!-- GLOBAL NAV SCRIPT -->
 <script src="js/global-nav.js"></script>
+<script>
+window.addEventListener("load", () => {
+  const audio = document.getElementById("audioSelesai");
+
+  console.log("DEBUG RESULT:");
+  console.log("Src:", audio.src);
+  console.log("ReadyState:", audio.readyState);
+
+  audio.addEventListener("error", () => {
+    console.log("AUDIO ERROR:", audio.error);
+  });
+});
+</script>
+<!-- AUDIO BACKSOUND RESULT -->
+<!-- AUDIO SILENT UNTUK MEMBUKA IZIN AUTOPLAY -->
+<audio id="audioSilent" preload="auto">
+    <source src="assets/audio/backsound/silent.mp3" type="audio/mpeg">
+</audio>
+
+<!-- AUDIO SELESAI -->
+<!-- AUDIO BACKSOUND RESULT -->
+<audio id="silent" src="assets/audio/backsound/silent.mp3" preload="auto"></audio>
+<audio id="audioSelesai" preload="auto"></audio>
+
+<script>
+window.addEventListener("DOMContentLoaded", async () => {
+
+    // 1. SET SOURCE SECARA MANUAL (agar tidak kosong)
+    const audioSelesai = document.getElementById("audioSelesai");
+    audioSelesai.src = "assets/audio/backsound/Selesai.mp3";
+
+    console.log("DEBUG RESULT:");
+    console.log("Src:", audioSelesai.src);
+    console.log("ReadyState:", audioSelesai.readyState);
+
+    // 2. PLAY SILENT (wajib agar autoplay terbuka)
+    try {
+        await document.getElementById("silent").play();
+        console.log("Silent OK — autoplay unlocked");
+    } catch (err) {
+        console.warn("Silent gagal:", err);
+    }
+
+    // 3. TUNGGU SEDIKIT, LALU PLAY AUDIO SELESAI
+    setTimeout(async () => {
+        try {
+            await audioSelesai.play();
+            console.log("Selesai.mp3 dimainkan");
+        } catch (err) {
+            console.warn("Gagal play Selesai:", err);
+        }
+    }, 500);
+});
+</script>
+
 </body>
 </html>

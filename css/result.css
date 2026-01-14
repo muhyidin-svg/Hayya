@@ -8,11 +8,11 @@ body {
 
 .result-container {
   max-width: 420px;
-  margin: 40px auto;
-  padding: 24px;
+  margin: 40px auto 90px auto;
+  padding: 32px;
   background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
   text-align: center;
 }
 
@@ -22,16 +22,18 @@ body {
 }
 
 .score-card {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: #58cc02;
   color: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 20px;
+  border-radius: 24px;
+  padding: 32px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 0 #46a402;
 }
 
 .score-value {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 6px;
 }
 
 .score-detail {
@@ -42,8 +44,9 @@ body {
 
 /* BINTANG */
 .stars {
-  font-size: 28px;
-  margin: 16px 0;
+  font-size: 30px;
+  margin: 20px 0;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 .star {
@@ -62,18 +65,21 @@ body {
 }
 
 .badge.good {
-  background: #e6f7e6;
-  color: #2e7d32;
+  background: #e7ffdb;
+  color: #3b7f00;
+  border: 2px solid #b9f6a5;
 }
 
 .badge.medium {
-  background: #fff4e5;
-  color: #ef6c00;
+  background: #fff4d6;
+  color: #c67c00;
+  border: 2px solid #ffe6ac;
 }
 
 .badge.low {
-  background: #fdecea;
-  color: #c62828;
+  background: #ffe2e0;
+  color: #d64545;
+  border: 2px solid #ffb5b3;
 }
 
 /* PESAN */
@@ -89,19 +95,29 @@ body {
 }
 
 .actions button {
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 14px 18px;
+  border-radius: 999px;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
+  min-width: 140px;
+  transition: transform 0.15s ease;
 }
 
 #btn-ulangi {
-  background: #4facfe;
+  background: #58cc02;
   color: #fff;
+  box-shadow: 0 4px 0 #46a402;
 }
 
 #btn-kembali {
-  background: #e0e0e0;
+  background: #ffde59;
   color: #333;
+  box-shadow: 0 4px 0 #e1be00;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

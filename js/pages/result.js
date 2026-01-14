@@ -4,6 +4,8 @@
  */
 
 // Ambil data dari localStorage
+// Ambil query params (wajib agar nav dan fitur lain tidak error)
+const paramsResult = new URLSearchParams(window.location.search);
 const data = JSON.parse(localStorage.getItem("resultQuiz"));
 
 if (!data) {
@@ -105,8 +107,8 @@ function setActive(menuId) {
 }
 
 // agar tombol nav Subtema kembali ke halaman yang benar
-const temaId = params.get("tema");
-document.getElementById("nav-subtema").href =
-  `subtema.html?tema=${temaId}`;
+const temaIdNav = paramsResult.get("tema");
+const navSub = document.getElementById("nav-subtema");
+if (navSub) navSub.href = `subtema.html?tema=${temaIdNav}`;
 
-setActive("nav-subtema");
+if (navSub) setActive("nav-subtema");

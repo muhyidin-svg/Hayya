@@ -22,7 +22,8 @@
     <h1 id="quiz-judul">Judul Pertemuan</h1>
 
     <div id="progress-wrapper">
-      <div id="progress-bar"></div>
+      <div id="progress-bar"><div></div></div>
+      <span id="progress-text">1/10</span>
     </div>
   </header>
 
@@ -109,6 +110,63 @@
        SCRIPT QUIZ
   ===================================================== -->
   <script type="module" src="js/pages/quiz.js"></script>
+
+  <!-- RESULT MODAL (Duolingo Style) -->
+  <div id="result-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+
+    <div class="modal-card">
+      <div class="result-stars">
+        ★ ★ ★
+      </div>
+
+      <h2 id="result-score" class="result-score">0%</h2>
+      <p id="result-message" class="result-message">Hasil kamu bagus!</p>
+
+      <div class="modal-actions">
+        <button id="btn-lanjut" class="modal-btn modal-btn-green">Lanjut Pertemuan</button>
+        <button id="btn-ulangi" class="modal-btn modal-btn-yellow">Ulangi Quiz</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const modal = document.getElementById("result-modal");
+  const scoreEl = document.getElementById("result-score");
+  const msgEl = document.getElementById("result-message");
+  const btnUlangi = document.getElementById("btn-ulangi");
+  const btnLanjut = document.getElementById("btn-lanjut");
+
+  // TERIMA DATA DARI quiz.js VIA EVENTS
+  window.showQuizResult = function(data) {
+    modal.classList.remove("hidden");
+
+    scoreEl.textContent = data.skor + "%";
+
+    if (data.skor === 100) msgEl.textContent = "Sempurna! Kamu luar biasa!";
+    else if (data.skor >= 70) msgEl.textContent = "Bagus! Kamu hampir sempurna!";
+    else msgEl.textContent = "Tetap semangat, coba lagi ya!";
+
+    // Putar suara selesai
+    const selesaiAudio = new Audio("assets/audio/backsound/Selesai.mp3");
+    selesaiAudio.play().catch(()=>{});
+  };
+
+  btnUlangi.onclick = () => {
+    window.location.reload();
+  };
+
+  btnLanjut.onclick = () => {
+    const params = new URLSearchParams(window.location.search);
+    const tema = params.get("tema");
+    const subtema = params.get("subtema");
+    window.location.href = `pertemuan.html?tema=${tema}&subtema=${subtema}`;
+  };
+
+});
+</script>
 
 </body>
 </html>
