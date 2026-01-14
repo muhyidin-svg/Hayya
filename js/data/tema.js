@@ -70,7 +70,7 @@ export const temaList = [
     semester: "2"
   },
   {
-    id: "t010",
+    id: "t10",
     nama: "Kesehatanku",
     deskripsi: "Olahraga dan hidup sehat",
     kelas: "8",
@@ -81,42 +81,42 @@ export const temaList = [
   // KELAS 9 (Tema 11–16)
   // =========================
   {
-    id: "t011",
+    id: "t11",
     nama: "Tahun Baru Hijriyah",
     deskripsi: "Kisah dan perayaan",
     kelas: "9",
     semester: "1"
   },
   {
-    id: "t012",
+    id: "t12",
     nama: "Maulid Nabi",
     deskripsi: "Sejarah dan perayaan",
     kelas: "9",
     semester: "1"
   },
   {
-    id: "t013",
+    id: "t13",
     nama: "Nuzulul Qur'an dan Hari Raya",
     deskripsi: "Kegiatan dan sejarahnya",
     kelas: "9",
     semester: "1"
   },
   {
-    id: "t014",
+    id: "t14",
     nama: "Indahnya Pemandangan Alam",
     deskripsi: "Macam-macam pemandangan alam",
     kelas: "9",
     semester: "2"
   },
   {
-    id: "t015",
+    id: "t15",
     nama: "Pencipta Alam Semesta",
     deskripsi: "Tadabur dan syukur kepada Allah",
     kelas: "9",
     semester: "2"
   },
   {
-    id: "t016",
+    id: "t16",
     nama: "Menjaga Kebersihan Lingkungan",
     deskripsi: "Isu kebersihan dan cara menjaganya",
     kelas: "9",
