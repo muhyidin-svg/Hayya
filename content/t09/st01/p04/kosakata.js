@@ -1,72 +1,12 @@
 export const kosakata = [
-  {
-    "id": "k01",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k02",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k03",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k04",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k05",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k06",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k07",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k08",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k09",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  },
-  {
-    "id": "k10",
-    "arab": "-----",
-    "indo": "-----",
-    "image": "placeholder.png",
-    "audio": "placeholder.mp3"
-  }
+  { id: "kt31", arab: "تَاجِرٌ", indo: "Pedagang (L)", audio: "assets/audio/kosakata/t09/pedagang.mp3", image: "assets/images/kosakata/t09/pedagang.png" },
+  { id: "kt32", arab: "تَاجِرَةٌ", indo: "Pedagang (P)", audio: "assets/audio/kosakata/t09/pedagang_pr.mp3", image: "assets/images/kosakata/t09/pedagang_pr.png" },
+  { id: "kt33", arab: "بَائِعٌ", indo: "Penjual (L)", audio: "assets/audio/kosakata/t09/penjual.mp3", image: "assets/images/kosakata/t09/penjual.png" },
+  { id: "kt34", arab: "بَائِعَةٌ", indo: "Penjual (P)", audio: "assets/audio/kosakata/t09/penjual_pr.mp3", image: "assets/images/kosakata/t09/penjual_pr.png" },
+  { id: "kt35", arab: "سَمَّاكٌ", indo: "Nelayan", audio: "assets/audio/kosakata/t09/nelayan.mp3", image: "assets/images/kosakata/t09/nelayan.png" },
+  { id: "kt36", arab: "سَمَّاكَةٌ", indo: "Nelayan (P)", audio: "assets/audio/kosakata/t09/nelayan_pr.mp3", image: "assets/images/kosakata/t09/nelayan_pr.png" },
+  { id: "kt37", arab: "خَادِمٌ", indo: "Pelayan (L)", audio: "assets/audio/kosakata/t09/pelayan.mp3", image: "assets/images/kosakata/t09/pelayan.png" },
+  { id: "kt38", arab: "خَادِمَةٌ", indo: "Pelayan (P)", audio: "assets/audio/kosakata/t09/pelayan_pr.mp3", image: "assets/images/kosakata/t09/pelayan_pr.png" },
+  { id: "kt39", arab: "بَقَّالٌ", indo: "Penjual Sembako (L)", audio: "assets/audio/kosakata/t09/sembako.mp3", image: "assets/images/kosakata/t09/sembako.png" },
+  { id: "kt40", arab: "بَقَّالَةٌ", indo: "Penjual Sembako (P)", audio: "assets/audio/kosakata/t09/sembako_pr.mp3", image: "assets/images/kosakata/t09/sembako_pr.png" }
 ];
